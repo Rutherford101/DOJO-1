@@ -23,7 +23,7 @@ https://www.tinkercad.com/things/agkGXpDME00-dojo-ezequiel-gonzalez-1-semaforo-/
 
 este codigo se encarga de prender y apagar las luces teniendo en cuenta el buzzler como indicador de tiempo para el amarillo y el rojo mientras que el verde tiene un delay para indicar cuanto tiempo esta prendido
 
-```c++
+```python
 void loop() //semaforo :
 {
   digitalWrite(LEDVERDE1, HIGH);
@@ -62,5 +62,5 @@ void loop() //semaforo :
   digitalWrite(LEDROJO1, LOW);
   digitalWrite(LEDROJO2, LOW);
 }
-```c++
+
 
