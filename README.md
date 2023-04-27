@@ -5,9 +5,9 @@
 ![semaforodoble](https://user-images.githubusercontent.com/108504690/234933574-becf2738-38af-443b-a599-07bf217374ae.png)
 
 **Integrantes**
-°Ezequiel Gonzalez
-°Julian conti
-°juan Ignacio Feas
+°Ezequiel Gonzalez /n
+°Julian conti /n
+°juan Ignacio Feas /n
 
 **Proyecto**
 
