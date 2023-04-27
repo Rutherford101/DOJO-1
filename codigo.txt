@@ -1,0 +1,60 @@
+// C++ code
+// Ezequiel gonzalez,Juan Ignacio Feas ,Julian Conti
+int LEDVERDE1 = 13;
+int LEDVERDE2 = 12;
+int LEDAMARILLO1 = 11;
+int LEDAMARILLO2 = 10;
+int LEDROJO1 = 9;
+int LEDROJO2 = 8;
+int BUZZLER = 7;
+//declaramos los pines
+void setup() 
+{
+  Serial.begin(9600);
+  pinMode(LEDVERDE1, OUTPUT);
+  pinMode(LEDVERDE2, OUTPUT);
+  pinMode(LEDAMARILLO1, OUTPUT);
+  pinMode(LEDAMARILLO2, OUTPUT);
+  pinMode(LEDROJO1, OUTPUT);
+  pinMode(LEDROJO2, OUTPUT);
+  pinMode(BUZZLER, OUTPUT);
+//inicializamos los pines
+}
+
+
+void loop() //semaforo :
+{
+  digitalWrite(LEDVERDE1, HIGH);
+  digitalWrite(LEDVERDE2, HIGH);
+  
+  delay(45000);
+  
+  digitalWrite(LEDVERDE1, LOW);
+  digitalWrite(LEDVERDE2, LOW);
+  digitalWrite(LEDAMARILLO1, HIGH);
+  digitalWrite(LEDAMARILLO2, HIGH);
+  
+  for (int CantPitidos = 0; CantPitidos < 2; CantPitidos++)
+  {
+    tone(BUZZLER, 500);
+    delay(1000);
+    noTone(BUZZLER);
+    delay(2000);
+  }
+  
+  digitalWrite(LEDAMARILLO1, LOW);
+  digitalWrite(LEDAMARILLO2, LOW);
+  digitalWrite(LEDROJO1, HIGH);
+  digitalWrite(LEDROJO2, HIGH);
+  
+  for (int CantPitidos = 0; CantPitidos < 30; CantPitidos++)
+  {
+    tone(BUZZLER, 1000);
+    delay(500);
+    noTone(BUZZLER);
+    delay(500);
+  }
+  
+  digitalWrite(LEDROJO1, LOW);
+  digitalWrite(LEDROJO2, LOW);
+}
